@@ -1,0 +1,89 @@
+body {
+    background-color: #13141b;
+    color: #ffffff;
+    background-image: url(../images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-size: cover;
+    min-width: 100%;
+    
+}
+
+.form-control {
+    color: #fff;
+    border: none;
+    padding: 22px;
+    transition: 0.4s;
+    border-radius: 25px;
+    border: 2px solid #28a745;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #28a745;
+}
+
+.btn {
+    border-radius: 1.5rem;
+    padding: 9px 20px;
+}
+
+.btn-privious {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.single-result {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+.single-result img {
+    border-radius: 50%;
+}
+
+#song__container {
+    transition: all 0.5s linear;
+}
+
+.song-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    padding: 4% 10%;
+    position: fixed;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.song-container::before {
+    content: 'Close';
+    position: fixed;
+    z-index: 9999;
+    top: 20px;
+    opacity: 1;
+    right: 40px;
+    transition: 0.4s all;
+    padding: 5px 20px;
+    border-radius: 8px;
+    background-color: #b30000;
+}
